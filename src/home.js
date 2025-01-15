@@ -1,5 +1,5 @@
 import coverImage from "./images/cover-image.jpg"
-export default function pageLoad() {
+export default function loadHome() {
     const content = document.querySelector("#content");
     const headline = document.createElement("h1");
     headline.textContent = "Coastal Grill";
