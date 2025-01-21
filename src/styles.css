@@ -94,6 +94,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-direction: column;
@@ -162,5 +163,58 @@ header {
         cursor: pointer;
         border-radius: 2px;
       }
+  }
+}
+
+.menu-container {
+  width: 70%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  margin-bottom: 100px;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  & .menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    & h1 {
+      align-self: center;
+      font-family: "montserratbold";
+      font-size: 1.3rem;
+    }
+
+    & div {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      grid-template-rows: repeat(3, 80px);
+      column-gap: 50px;
+
+      & img {
+        height: 240px;
+        width: 240px;
+        grid-row: 1 / -1;
+        border-radius: 8px;
+      }
+
+      & p:first-of-type {
+        font-family: "montserratregular";
+        
+      }
+  
+      & p:nth-of-type(2) {
+        font-family: "robotolight";
+        font-size: 0.6rem;
+      }
+
+      & p:last-of-type {
+        font-family: "montserratbold";
+        font-size: 0.8rem;
+      }
+    }
   }
 }
