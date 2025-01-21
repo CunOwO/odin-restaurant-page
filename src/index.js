@@ -30,3 +30,10 @@ nav.addEventListener("click", (e) => {
         contactContainer.classList.remove("hidden");
     }
 });
+
+const viewMenuBtn = document.querySelector(".home-container button");
+const menuBtn = document.querySelector(".menu");
+
+viewMenuBtn.addEventListener("click", () => {
+    menuBtn.dispatchEvent(new MouseEvent("click", {bubbles: true}));
+});
