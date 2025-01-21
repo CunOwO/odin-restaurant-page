@@ -16,6 +16,7 @@ export default function loadMenu() {
 
     const menuItemContainer1 = document.createElement("div");
     menuItemContainer1.classList.toggle("menu-item");
+    menuItemContainer1.classList.toggle("appetizers");
     const menuItemHeader1 = document.createElement("h1");
     menuItemHeader1.textContent = "Appetizers";
     menuItemContainer1.appendChild(menuItemHeader1);
@@ -25,6 +26,7 @@ export default function loadMenu() {
 
     const menuItemContainer2 = document.createElement("div");
     menuItemContainer2.classList.toggle("menu-item");
+    menuItemContainer2.classList.toggle("main-courses");
     const menuItemHeader2 = document.createElement("h1");
     menuItemHeader2.textContent = "Main Courses";
     menuItemContainer2.appendChild(menuItemHeader2);
@@ -36,6 +38,7 @@ export default function loadMenu() {
 
     const menuItemContainer3 = document.createElement("div");
     menuItemContainer3.classList.toggle("menu-item");
+    menuItemContainer3.classList.toggle("desserts");
     const menuItemHeader3 = document.createElement("h1");
     menuItemHeader3.textContent = "Desserts";
     menuItemContainer3.appendChild(menuItemHeader3);
