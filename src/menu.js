@@ -61,9 +61,13 @@ function renderMenuItem(imgPath, menuData) {
     const menuItemDescription = document.createElement("p");
     menuItemDescription.textContent = menuData.description;
 
+    const menuItemPrice = document.createElement("p");
+    menuItemPrice.textContent = menuData.price;
+
     menuItemContainer.appendChild(menuItemImage);
     menuItemContainer.appendChild(menuItemName);
     menuItemContainer.appendChild(menuItemDescription);
+    menuItemContainer.appendChild(menuItemPrice)
 
     return menuItemContainer;
 }
@@ -73,11 +77,13 @@ class Appetizer {
     static appetizerList = [
         {
             name: "Clam Chowder",
-            description: "Creamy New England-style chowder with fresh clams, potatoes, and herbs."
+            description: "Creamy New England-style chowder with fresh clams, potatoes, and herbs.",
+            price: "$8.99"
         },
         {
             name: "Shrimp Cocktail",
-            description: "Chilled jumbo shrimp with house-made cocktail sauce."
+            description: "Chilled jumbo shrimp with house-made cocktail sauce.",
+            price: "$10.99"
         }
     ];
 }
@@ -86,19 +92,23 @@ class MainCourse {
     static mainCourseList = [
         {
             name: "Grilled Salmon",
-            description: "Fresh Atlantic salmon grilled to perfection with a lemon-butter glaze."
+            description: "Fresh Atlantic salmon grilled to perfection with a lemon-butter glaze.",
+            price: "$19.99"
         },
         {
             name: "Seafood Pasta",
-            description: "Linguine tossed in a garlic cream sauce with shrimp, scallops, and mussels."
+            description: "Linguine tossed in a garlic cream sauce with shrimp, scallops, and mussels.",
+            price: "$21.99"
         },
         {
             name: "Mahi-Mahi Tacos",
-            description: "Soft tortillas filled with grilled mahi-mahi, cabbage slaw, and chipotle mayo."
+            description: "Soft tortillas filled with grilled mahi-mahi, cabbage slaw, and chipotle mayo.",
+            price: "$15.99"
         },
         {
             name: "Lobster Tail",
-            description: "Broiled lobster tail with drawn butter and a side of roasted vegetables."
+            description: "Broiled lobster tail with drawn butter and a side of roasted vegetables.",
+            price: "$29.99"
         }
     ];
 }
@@ -107,11 +117,13 @@ class Dessert {
     static dessertList = [
         {
             name: "Key Lime Pie",
-            description: "Tangy key lime filling with a graham cracker crust and whipped cream."
+            description: "Tangy key lime filling with a graham cracker crust and whipped cream.",
+            price: "$6.99"
         },
         {
             name: "Molten Lava Cake",
-            description: "Warm chocolate cake with a gooey center, served with vanilla ice cream."
+            description: "Warm chocolate cake with a gooey center, served with vanilla ice cream.",
+            price: "$7.99"
         }
     ];
 }
