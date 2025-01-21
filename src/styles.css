@@ -88,6 +88,79 @@ html {
     font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
 }
 
-.hidden {
-    display: none;
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/background.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px 50px 100px;
+
+  & h1 {
+    font-family: "montserratregular";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  & nav {
+    display: flex;
+    gap: 30px;
+
+    & button {
+        font-family: "montserratlight";
+        font-size: 0.8rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+  }
+}
+
+#content {
+  flex: 1;
+
+  & .hidden {
+    display: none !important;
+  }
+
+  & .home-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      & h1 {
+        font-family: "satisfyregular";
+        font-size: 3rem;
+      }
+    
+      & p {
+        font-size: 0.8rem;
+        text-align: center;
+        max-inline-size: 50ch;
+        font-family: "robotolight";
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    
+      & button {
+        font-family: "montserratbold";
+        font-size: 0.6rem;
+        padding: 30px 70px;
+        background-color: #FF8400;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+  }
 }
