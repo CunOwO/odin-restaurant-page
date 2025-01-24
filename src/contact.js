@@ -9,6 +9,10 @@ export default function loadContact() {
     contactContainer.classList.toggle("contact-container");
     contactContainer.classList.toggle("hidden");
 
+    const header = document.createElement("h1");
+    header.textContent = "Contact us";
+    contactContainer.appendChild(header);
+
     const contactItemContainer1 = document.createElement("div");
     const phoneIcon = document.createElement("img");
     phoneIcon.src = phone;
