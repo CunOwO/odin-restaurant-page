@@ -166,13 +166,17 @@ header {
   }
 }
 
-.menu-container {
+.menu-container,
+.contact-container {
   width: 70%;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
-  margin-bottom: 100px;
   padding: 50px 60px;
+}
+
+.menu-container {
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -203,7 +207,6 @@ header {
 
       & p:first-of-type {
         font-family: "montserratregular";
-        
       }
   
       & p:nth-of-type(2) {
@@ -215,6 +218,29 @@ header {
         font-family: "montserratbold";
         font-size: 0.8rem;
       }
+    }
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & h1 {
+    align-self: center;
+    font-family: "montserratbold";
+    font-size: 1.3rem;
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    & img {
+      height: 2rem;
+      /* filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(201deg) brightness(105%) contrast(105%); */
     }
   }
 }
